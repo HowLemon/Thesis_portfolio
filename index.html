@@ -1,25 +1,40 @@
 ﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+
 <head>
-    <title>論文題目</title>
+    <title>點對點即時虛擬人物線上會議系統</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.lp.css">
-	<link rel="stylesheet" type="text/css" href="css/landing-page.css">
-	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
-	<link rel="stylesheet" type="text/css" href="css/styleTest.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.lp.css">
+    <link rel="stylesheet" type="text/css" href="css/landing-page.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" type="text/css" href="css/styleTest.css">
+
+    <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+
+    <script type="importmap">
+        {
+            "imports": {
+            "three": "./three.module.js"
+            }
+        }
+    </script>
+
+
 </head>
 
 <body>
-	<!----------------------------------- Dividing line----------------------------------------------------->
-	
-	<!-- Navigation -->
+    <!----------------------------------- Dividing line----------------------------------------------------->
+
+    <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -27,7 +42,7 @@
                 </button>
 
                 <a class="navbar-brand topnav" href="https://myweb.ntut.edu.tw/~tjhsieh/">
-                ♪ 國立臺北科技大學 ♪ 資訊工程系 ♪ 計算機圖學實驗室 ♪</a>
+                    ♪ 國立臺北科技大學 ♪ 資訊工程系 ♪ 計算機圖學實驗室 ♪</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -35,16 +50,16 @@
                     <li>
                         <a href="#top">回頂端</a>
                     </li>
-					<li>
+                    <li>
                         <a href="#demo1">摘要</a>
                     </li>
-					<li>
+                    <li>
                         <a href="#demo2">引用文獻</a>
                     </li>
                     <li>
                         <a href="#demo3">示範</a>
                     </li>
-					
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -61,10 +76,10 @@
             <div class="row">
                 <div class="col-lg-12" style="height:300px;">
                     <div class="intro-message" style="position: relative;padding-top: 0%;padding-bottom: 70%;">
-                        <h1>論文題目</h1>
+                        <h1>點對點即時虛擬人物線上會議系統</h1>
                         <ul class="list-inline intro-social-buttons">
                             <li>
-                                <a href="demo.html" class="btn btn-default btn-lg"> 
+                                <a href="demo.html" class="btn btn-default btn-lg">
                                     <span class="network-name" style="font-weight: 900;">進入系統</span>
                                 </a>
                             </li>
@@ -80,20 +95,25 @@
     <!-- /.intro-header -->
 
     <!-- Page Content -->
-	<a  name="demo1"></a>
-	<div class="content-section-a">
+    <a name="demo1"></a>
+    <div class="content-section-a">
 
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-					<h2 class="section-heading">摘要</h2>
-					<p class="lead">內文內文內文內文內文內文內文內文內文內文</p>
+                    <h2 class="section-heading">摘要</h2>
+                    <p class="lead">
+                        近年來，線上會議的需求日益增加，人們也越來越習慣利用網路視訊方式與他人互動，例如遠距離教學、遠距離辦公等等。但人們通常因為隱私考量而不願意將視訊鏡頭開啟，影響了線上教學或是會議的互動性；如果想要利用虛擬人物來發起或是參加會議的話，通常需要購買特定軟體或是器材才能達成，對於單純想要發起會議的使用者來說非常不方便。基於上述原因，我們提出一個利用Live2D
+                        Cubism WebSDK、ReactJS、MediaPipe
+                        FaceMesh，整合臉部辨識、2D虛擬人物以及即時視訊以及語音通話的網頁系統。使用者可以利用虛擬人物，在不需要露面的前提下保持會議的互動性。本系統利用可在使用者端網頁執行的AI臉部追蹤(Face
+                        Alignment)，將所偵測到的資料套用至可自由變形的2D虛擬人物，以多媒體串流(MediaStream)的方式直接傳送到參加者的電腦上。</p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-					<br><br><br>
-                    <img class="img-responsive" src="img/dog.png" alt="">
+                    <br><br><br>
+                    <img class="img-responsive" src="img/streampipeline.svg" alt="">
+                    <div style="height: 500px;" id="showcase"></div>
                 </div>
             </div>
 
@@ -103,8 +123,8 @@
     </div>
     <!-- /.content-section-a -->
 
-    <a  name="demo2"></a>	
-	<div class="content-section-a">
+    <a name="demo2"></a>
+    <div class="content-section-a">
 
         <div class="container">
             <div class="row">
@@ -112,11 +132,23 @@
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">引用文獻</h2>
-					<p class="lead">內文內文內文內文內文內文內文內文內文內文</p>
+                    <p class="lead">
+                        Bazarevsky和Kartynnik等人在2019年提出BlazeFace臉部偵測框架，和上述提到的MobileNet架構類似，但主要利用行動裝置上的GPU運行，可在上述裝置上達到200~1000FPS的速度，可以利用來偵測臉部位置，以利更精細的臉部偵測處理，BlazeFace的感測範圍(紅色外框)以及後續特殊處理(綠色外框和節點)。
+                        <br>
+                        <br>
+                        例如Kartynnik和Ablavatski等人在2019年提出的臉部模型辨識Face
+                        Mesh就有應用到上述的技術。此論文先利用BlazeFace將畫面中臉部位置的部分分離出來，以及大略標記出眼睛、鼻子、耳朵等等的特徵點以利對齊，再來以分離出的臉部畫面為基準，標記出臉部468個特徵點。此論文可以在Google
+                        Pixel 3上以7.4微秒的速度標記出臉部特徵點。
+                        <br>
+                        <br>
+                        此外，Ablavatski和Vakunov在2020年提出利用上述方式，偵測到臉部的468個特徵點後，提取出眼睛周圍的臉部畫面，偵測出眼睛瞳孔的特徵點(瞳孔中心、4個瞳孔外框特徵點、16個眼眶特徵點，加上原本臉部特徵點，輸出總共478個特徵點。
+                    </p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-					<br><br><br>
-                    <img class="img-responsive" src="img/ipad.png" alt="">
+                    <br><br><br>
+                    <img class="img-responsive" src="img/blazeface.png" alt="">
+                    <img class="img-responsive" src="img/iris1.png" alt="">
+                    <img class="img-responsive" src="img/iris2.png" alt="">
                 </div>
             </div>
 
@@ -125,21 +157,48 @@
 
     </div>
     <!-- /.content-section-a -->
-	
-	<a name="demo3"></a>
-	<div class="content-section-a">
+
+    <a name="demo3"></a>
+    <div class="content-section-a">
 
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-					<h2 class="section-heading">示範</h2>
-					<p class="lead">內文內文內文內文內文內文內文內文內文內文</p>
+                    <h2 class="section-heading">示範 - Animeet</h2>
+                    <p class="lead">
+                        <br>
+                        <a class="btn btn-default btn-lg" href="https://howlemon.github.io/animeet_v2/">前往網站</a>
+                    </p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-					<br><br><br>
-                    <img class="img-responsive" src="img/phones.png" alt="">
+                    <br><br><br>
+                    <video controls autoplay class="img-responsive"
+                        src="video/Animeet - Google Chrome 2022-06-21 17-20-18.mp4"></video>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div><a name="demo3"></a>
+    <div class="content-section-a">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">示範 - Face-Test</h2>
+                    <p class="lead">
+                        <br>
+                        <a class="btn btn-default btn-lg" href="https://howlemon.github.io/Face-Test/">前往網站</a>
+                    </p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <br><br><br>
+                    <img class="img-responsive" src="img/clip.png" alt="">
                 </div>
             </div>
 
@@ -148,13 +207,13 @@
 
     </div>
     <!-- /.content-section-a -->
-	
 
-	
+
+
     <!-- Footer -->
     <footer>
         <div class="container">
-			<div class="row">
+            <div class="row">
                 <div class="col-lg-12">
                     <hr>
                     <p></p>
@@ -162,20 +221,27 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="copyright text-muted small"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="創用 CC 授權條款" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type"></span>
+                    <p class="copyright text-muted small"><a rel="license"
+                            href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="創用 CC 授權條款"
+                                style="border-width:0"
+                                src="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><span
+                            xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource"
+                            property="dct:title" rel="dct:type"></span>
                     </p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
                     <p class="copyright text-muted small">
-			論文題目，
+                        論文題目，
 
-            由<a xmlns:cc="http://creativecommons.org/ns#" href="http://www.cc.ntut.edu.tw/~tjhsieh/" property="cc:attributionName" rel="cc:attributionURL">國立臺北科技大學資訊工程系計算機圖學實驗室</a>製作，
-			以<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">創用CC 姓名標示-非商業性-相同方式分享 4.0 國際 授權條款</a>釋出。
-			姓名標示-非商業性-相同方式分享 CC BY-NC-SA
-			本授權條款允許使用者對本著作進行重混、調整，以及依原著作建立新著作，但僅限於非商業目的之使用。唯使用者就其新創著作，必須按照表彰
-			原作：國立臺北科技大學資訊工程系計算機圖學實驗室，並且將產出之新創著作採用相同的授權條款釋出。</p>
+                        由<a xmlns:cc="http://creativecommons.org/ns#" href="http://www.cc.ntut.edu.tw/~tjhsieh/"
+                            property="cc:attributionName" rel="cc:attributionURL">國立臺北科技大學資訊工程系計算機圖學實驗室</a>製作，
+                        以<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">創用CC 姓名標示-非商業性-相同方式分享
+                            4.0 國際 授權條款</a>釋出。
+                        姓名標示-非商業性-相同方式分享 CC BY-NC-SA
+                        本授權條款允許使用者對本著作進行重混、調整，以及依原著作建立新著作，但僅限於非商業目的之使用。唯使用者就其新創著作，必須按照表彰
+                        原作：國立臺北科技大學資訊工程系計算機圖學實驗室，並且將產出之新創著作採用相同的授權條款釋出。</p>
                 </div>
             </div>
         </div>
@@ -187,10 +253,12 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="lib/bootstrap.min.js"></script>
 
-	
-	
-	
-	
-	
+
+
+
+
+
 </body>
+<script type="module" src="display.js" ></script>
+
 </html>
